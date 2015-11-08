@@ -1,0 +1,23 @@
+{
+  "name": "generator-protype",
+  "version": "1.5.0",
+  "files": [
+    "app"
+  ],
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel-node build.js",
+    "deploy": "npm version minor && babel-node build.js && git push && git push --tags && node gh-deploy.js",
+    "test": "ava"
+  },
+  "author": "gavriguy",
+  "license": "BSD",
+  "dependencies": {
+    "yeoman-generator": "^0.21.1"
+  },
+  "devDependencies": {
+    "ava": "^0.3.0",
+    "babel-plugin-project-relative-require": "^2.0.1"
+  }
+}
