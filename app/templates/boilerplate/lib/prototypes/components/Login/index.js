@@ -24,7 +24,7 @@ export default (props) => {
           type="password"
           placeholder="Insert Access Key"
           wrapperClassName="col-xs-4 col-md-offset-4"
-          buttonAfter={<Button onClick={login}>Enter</Button>}
+          buttonAfter={<Button type="submit" onClick={login}>Enter</Button>}
         />
       </form>
     </div>
