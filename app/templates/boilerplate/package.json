@@ -6,7 +6,7 @@
   "scripts": {
     "accessKey": "node ./scripts/generate-access-key.js",
     "build": "babel-node ./scripts/build.js",
-    "deploy": "npm version minor && babel-node scripts/build.js && git push && git push --tags && scripts/node gh-deploy.js",
+    "deploy": "npm version minor && babel-node scripts/build.js && git push && git push --tags && node scripts/gh-deploy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
