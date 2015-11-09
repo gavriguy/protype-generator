@@ -17,6 +17,9 @@
     "yeoman-generator": "^0.21.1"
   },
   "devDependencies": {
+    "eslint-config-airbnb": "^0.1.0",
+    "eslint-plugin-react": "^3.6.3",
+    "eslint": "^1.9.0",
     "ava": "^0.3.0",
     "babel-plugin-project-relative-require": "^2.0.1"
   }

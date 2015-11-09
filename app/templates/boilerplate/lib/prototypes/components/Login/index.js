@@ -8,6 +8,7 @@ import {
 
 export default (props) => {
   const login = (event) => {
+    event.preventDefault();
     window.sessionStorage.pa = md5(event.target.form[0].value);
     event.target.form[0].value = '';
     if (props.history) {
